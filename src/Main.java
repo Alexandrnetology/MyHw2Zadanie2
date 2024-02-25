@@ -14,7 +14,7 @@ public class Main {
         if (amountDeposit < 1000) {
             int balans = amountDeposit + initiAlaccount;
             System.out.println(balans);
-        } else if(amountDeposit >= 1000) {
+        } else {
             int balansBonus = amountDeposit / 100 + amountDeposit + initiAlaccount;
             System.out.println("initiAlaccount");
             System.out.println(balansBonus);
