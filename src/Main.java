@@ -9,15 +9,15 @@ public class Main {
         // сумма пополнения порог, и для этих двух разных
         // сценариев рассчитываете сумму бонуса и выводите
         // на экран.
-        int NachSchet = 100;
-        int symm = 1100;
-        if (symm < 1000) {
-            int balans = symm + NachSchet;
+        int initialaccount = 100;
+        int amountdeposit = 1100;
+        if (amountdeposit < 1000) {
+            int balans = amountdeposit + initialaccount;
             System.out.println(balans);
-        }
-        if (symm >= 1000) {
-            int BalansBonus = symm / 100 + symm + NachSchet;
-            System.out.println(BalansBonus);
+        } else if(amountdeposit >= 1000) {
+            int balansbonus = amountdeposit / 100 + amountdeposit + initialaccount;
+            System.out.println("initialaccount");
+            System.out.println(balansbonus);
         }
     }
 }
